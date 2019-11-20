@@ -38,3 +38,5 @@ oc set env dc/my-application APP_VERSION="${APP_VERSION}"
  - Copy the ci folder and the .releaserc to your project
  - Adjust settings in the .releaserc
  - You can also automate jira releases. A sample config exists: .releaserc_with_jira - it requires auth via a JIRA_AUTH environment variable.
+ - On Jekins call ci/commit_lint.sh on your feature branches
+ - On Jekins call ci/semantic_release.sh on your production branch
