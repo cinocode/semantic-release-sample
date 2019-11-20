@@ -1,0 +1,14 @@
+{
+  "name": "semantic_release",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/exec": "^3.3.6",
+    "semantic-release": "^15.13.24",
+    "semantic-release-cli": "^5.2.1",
+    "semantic-release-jira-releases": "^0.4.0"
+  }
+}
