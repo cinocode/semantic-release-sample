@@ -23,7 +23,7 @@ git commit --amend -m "feat: added a cool thing"
 ##### Semantic Release:
  - Run this to try out the actual semantic release. Configuration can be altered in the .releaserc file.
 ```
-git checkout production
+git checkout -b production master
 git merge --no-ff coolfeature
 ./ci/semantic_release.sh
 ```
