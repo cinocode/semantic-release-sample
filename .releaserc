@@ -1,0 +1,21 @@
+{
+    "branch": "production",
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        [
+            "@semantic-release/changelog",
+            {
+                "changelogFile": "target/RELEASE_NOTES.md",
+                "changelogTitle": "## [semantic-release-sample](https://github.com/cinocode/semantic-release-sample) has been released."
+            }
+        ],
+        [
+            "@semantic-release/exec",
+            {
+                "successCmd": "ci/export_version.sh ${nextRelease.version}"
+            }
+        ]
+    ],
+    "tagFormat": "${version}"
+}
